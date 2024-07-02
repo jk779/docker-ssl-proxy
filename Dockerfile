@@ -1,4 +1,5 @@
-FROM alpine:3
+# syntax=docker/dockerfile:1
+FROM alpine:latest
 
 ENV SSL_PORT=443
 
