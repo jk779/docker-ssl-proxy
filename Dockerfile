@@ -1,4 +1,4 @@
-FROM FROM alpine:3.20.1
+FROM alpine:3.20.1
 
 ENV SSL_PORT=443
 
