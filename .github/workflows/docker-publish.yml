@@ -32,8 +32,8 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ghcr.io/${{ github.repository }}:latest
-          platforms: amd64,arm64
+          tags: | 
+            ghcr.io/${{ github.repository }}:latest
+            ghcr.io/${{ github.repository }}:${{ github.sha }}
+          platforms: linux/amd64,linux/arm64
 
-      - name: Image digest
-        run: echo ${{ steps.build-and-push.outputs.digest }}
