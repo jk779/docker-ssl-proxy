@@ -1,5 +1,6 @@
 .idea/
 nginx.conf
 certs/
+ca/
 .DS_Store
-debug
+start
