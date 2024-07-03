@@ -2,7 +2,7 @@ worker_processes 1;
 pid /run/nginx.pid;
 daemon off;
 
-error_log stderr info;
+error_log stderr debug;
 
 events { worker_connections 1024; }
 
@@ -39,7 +39,7 @@ http {
             proxy_set_header X-Real-IP         $remote_addr;
             proxy_set_header Upgrade           $http_upgrade;
             proxy_set_header Connection        $connection_upgrade;
-         
+
             proxy_read_timeout       3600;
             proxy_buffer_size        128k;
             proxy_buffers            4 256k;
