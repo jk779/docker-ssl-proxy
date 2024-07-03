@@ -1,3 +1,5 @@
 .idea/
 nginx.conf
 certs/
+.DS_Store
+debug
